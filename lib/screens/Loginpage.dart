@@ -17,7 +17,19 @@ class LoginPage extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Column(children: [
-                    const SizedBox(height: 50), // Adding space at the top
+                        // Place your image widget at the top
+                        Container(
+                          height: 100, // adjust this value according to your image height
+                          width: double.infinity, // occupy the full width
+                          child: Image.network(
+                            'https://images.pexels.com/photos/2409038/pexels-photo-2409038.jpeg?auto=compress&cs=tinysrgb&w=400',
+                            fit: BoxFit.cover, // adjust how the image fits the container
+                          ),
+                        ),
+                        // Add other widgets below the image
+                        // For example:
+                        // Text('Below the image'),
+                    // Adding space at the top
                     Text("Welcome back",
                         style: GoogleFonts.cambo(
                             fontSize: 50, color: Colors.green)),
@@ -49,7 +61,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      height: 300,
+                      height: 160,
                     ),
                     MaterialButton(
                       onPressed: () {},
