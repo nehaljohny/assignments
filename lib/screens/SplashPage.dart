@@ -1,3 +1,6 @@
+import 'dart:async';
+
+import 'package:assignments/homeListView/WateringList.dart';
 import 'package:assignments/screens/Loginpage.dart';
 import 'package:assignments/screens/SignupPage.dart';
 import 'package:flutter/material.dart';
@@ -6,6 +9,10 @@ import 'package:google_fonts/google_fonts.dart';
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Timer(const Duration(seconds: 1), () {
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => WateringPlants_list()));
+    });
     return Scaffold(
         body: Container(
             decoration: const BoxDecoration(
@@ -20,10 +27,6 @@ class SplashPage extends StatelessWidget {
                   Text(
                     " The best app for your plants",
                     style: GoogleFonts.cambo(fontSize: 50, color: Colors.white),
-                    // style: TextStyle(
-                    //   fontSize: 70,
-                    //  fontStyle: FontStyle.italic,
-                    // color: Colors.black),
                   ),
               SizedBox(height: 20.0),
                   MaterialButton(
