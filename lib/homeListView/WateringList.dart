@@ -26,7 +26,7 @@ class WateringPlants_list extends StatelessWidget {
         stringdata: '250ml'),
     Data(
         image:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSj7lfQuH4gygpUumpiOJMgi-VzT4DP04a89s8XdJJvw&s',
+        'https://leafyisland.com/cdn/shop/files/Peperomia5.png?v=1695229525&width=1946',
         name: 'Peperomia Obtusifolia ',
         stringdata: '250ml'),
   ];
