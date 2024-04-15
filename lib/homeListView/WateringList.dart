@@ -1,53 +1,61 @@
+import 'dart:ui';
+
 import 'package:assignments/homeListView/productmodel.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WateringPlants_list extends StatelessWidget {
   var datas = [
     Data(
         image:
-            'https://lalitenterprise.com/cdn/shop/products/Sellum-plant.webp?v=1669542129',
+        'assets/images/Philodendron.png',
         name: 'Filodendro atom',
         stringdata: '250ml'),
     Data(
         image:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTptS9_DoeG4LFvjw2RgCj3E1Eq1z0qPAqZMTIq7x1cKQ&s',
+        'assets/images/Monstera.png',
         name: 'Monstera Deliciosa',
         stringdata: '500ml'),
     Data(
         image:
-            'https://m.media-amazon.com/images/I/61Mgr2Q7yML._AC_UF1000,1000_QL80_.jpg',
+        'assets/images/Chlorophytum.png',
         name: 'Chlorophytum ',
         stringdata: '500ml'),
     Data(
         image:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSj7lfQuH4gygpUumpiOJMgi-VzT4DP04a89s8XdJJvw&s',
+        'assets/images/Kentiapalm.png',
         name: 'Kentiapalm ',
         stringdata: '250ml'),
     Data(
         image:
-        'https://leafyisland.com/cdn/shop/files/Peperomia5.png?v=1695229525&width=1946',
+        'assets/images/Peperomia.png',
         name: 'Peperomia Obtusifolia ',
         stringdata: '250ml'),
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.settings_outlined),
-        title: const Text(
-          'Water Today',
-          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-        ),
+        // title: const Text(
+        //   'Water Today',
+        //   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        // ),
         actions: [
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.add_circle_outline,
                 color: Colors.blueGrey,
               ))
         ],
+        title: const Text('Water Today',
+        style:TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.black),
+      ),
       ),
       body: ListView.separated(
           itemBuilder: (context, index) {
