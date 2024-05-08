@@ -6,8 +6,8 @@ import 'package:assignments/PlantApp/detailview/plant4.dart';
 import 'package:assignments/PlantApp/detailview/plant5.dart';
 import 'package:flutter/material.dart';
 
-import 'PlantApp/homeListView/WateringList.dart';
-import 'PlantApp/screens/SplashPage.dart';
+
+import 'QuizApp/screens/SplashPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WateringPlantsList(),
+      home: QuizSplash(),
       routes: {
         'Plant1': (context) => Plant1(),
         'Plant2': (context) => Plant2(),
