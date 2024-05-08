@@ -1,17 +1,18 @@
 import 'dart:async';
 
-import 'package:assignments/homeListView/WateringList.dart';
-import 'package:assignments/screens/Loginpage.dart';
-import 'package:assignments/screens/SignupPage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../homeListView/WateringList.dart';
+import 'Loginpage.dart';
+import 'SignupPage.dart';
 
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Timer(const Duration(seconds: 1), () {
       Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context) => WateringPlants_list()));
+          MaterialPageRoute(builder: (context) => WateringPlantsList()));
     });
     return Scaffold(
         body: Container(
