@@ -209,7 +209,7 @@ class _QuizPageState extends State<QuizPage> {
                       ),
                     ),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Retry',
                     style: TextStyle(
                       color: Colors.white,
@@ -221,13 +221,6 @@ class _QuizPageState extends State<QuizPage> {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text(
-                    'Exit',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ),
                   style: ButtonStyle(
                     backgroundColor:
                     MaterialStateProperty.all<Color>(Colors.redAccent),
@@ -238,6 +231,13 @@ class _QuizPageState extends State<QuizPage> {
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
+                    ),
+                  ),
+                  child: const Text(
+                    'Exit',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
                     ),
                   ),
                 ),
